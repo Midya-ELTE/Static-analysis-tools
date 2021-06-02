@@ -20,8 +20,8 @@ SS (5): “Null pointer should not be dereferenced”, “”@NonNull” values 
 
 CWE772 (Missing Release of Resource after Effective Lifetime)
 PMD (1): “CloseResource” (category: Error prone);
-SB (3): “ODR-ODR_OPEN_DATABASE_RESOURCE” (category: Bad practices), “OBL_OPEN_UNSATISFIED_OBLIGATION”, “ODR_OPEN_DATABASE_RESOURCE_EXCEPTION_PATH”, 
-(category: Experimental);
+SB (3): “ODR-ODR_OPEN_DATABASE_RESOURCE” (category: Bad practices), 
+“OBL_OPEN_UNSATISFIED_OBLIGATION”, “ODR_OPEN_DATABASE_RESOURCE_EXCEPTION_PATH”, (category: Experimental);
 SS (1): “Resource should be closed” (category: Bug).
 
 CWE78 (Improper Neutralization of Special Elements used in an OS Command / OS Command Injection)
