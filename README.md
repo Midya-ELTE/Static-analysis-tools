@@ -1,6 +1,6 @@
 # Static-analysis-tools
 This repository contains Technical report related to the article entitled "........I will put the name later...........""
 
-There are two parts in this repository:
-part 1: The rules detectors number and names for the static analysis tools which have been experiments in the paper.
-part2: the flow chart of the analysis for obtaining the rule list and the results of the study.
+There are two files in this repository:
+CWEs Rule Detectors.txt: Technical report of the six Common Weaknesses Enumeration rules detectors exist in PMD, SpotBugs(SB), Find Security Bug (FSB), and SonarQube Community Edition (SS) along with their number and categories.
+The analysis workflow.jpg: the flow chart of the analysis for obtaining the rule list (green part) ,and the results (blue part) of the study.
