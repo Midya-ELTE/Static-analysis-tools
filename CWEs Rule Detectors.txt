@@ -1,0 +1,27 @@
+Technical report of the six Common Weaknesses Enumeration rules detectors exist in PMD, SpotBugs(SB), Find Security Bug (FSB), and SonarQube Community Edition (SS) along with their number and categories.
+ 
+CWE190 (Integer Overflow)
+SS (1): “Math operand should be cast before assignment” (category: Bug).
+
+CWE400 (Uncontrolled Resource Consumption)
+FSB (1): “REDOS” (category: security);
+SS (3): “Using slow regular expressions is security-sensitive”, “Allowing requests with excessive content length is security-sensitive”, “Using socket is security-sensitive”, (category: Security hotspot).
+
+CWE476 (Null Pointer Dereference)
+PMD (1): “NullAssignment” (category: Error prone);
+SB (13): “NP-NP_ALWAYS_NULL” and other NP-* rules (category: Correctness),
+“NP-NP_LOAD_OF_KNOWN_NULL-VALUE" (category: style);  
+SS (5): “Null pointer should not be dereferenced”, “”@NonNull” values should not be set to null”, “”toString()” and ”clone()” methods should not return null”, “Optional value should only be accessed after calling isPresent()” (category: Bug), “Null should not be returned from a “Boolean” method” (category: Code smell).
+
+CWE772 (Missing Release of Resource after Effective Lifetime)
+PMD (1): “CloseResource” (category: Error prone);
+SB (3): “ODR-ODR_OPEN_DATABASE_RESOURCE” (category: Bad practices), “OBL_OPEN_UNSATISFIED_OBLIGATION”, “ODR_OPEN_DATABASE_RESOURCE_EXCEPTION_PATH”, (category: Experimental);
+SS (1): “Resource should be closed” (category: Bug).
+
+CWE78 (Improper Neutralization of Special Elements used in an OS Command / OS Command Injection)
+FSB (1): “Command Injection” (category: Security).
+
+CWE89 (Improper Neutralization of Special Elements used in an SQL Command / SQL Injection)
+SB (2): “SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE”, “SQL_ PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING” (category: Security); 
+FSB (8): “SQL_INJECTION_JDBC” and other “SQL_INJECTION*” rules, (category: Security); 
+SS (1): “Formatting SQL queries are security-sensitive” (category: Security hotspot).
