@@ -1,11 +1,13 @@
-Technical report of the six Common Weaknesses Enumeration rules detectors exist in PMD, SpotBugs(SB), Find Security Bug (FSB), and SonarQube Community Edition (SS) along with their number and categories.
+Technical report of the six Common Weaknesses Enumeration rules detectors exist in PMD, SpotBugs(SB), Find Security Bug (FSB), and SonarQube Community Edition (SS)
+along with their number and categories.
  
 CWE190 (Integer Overflow)
 SS (1): “Math operand should be cast before assignment” (category: Bug).
 
 CWE400 (Uncontrolled Resource Consumption)
 FSB (1): “REDOS” (category: security);
-SS (3): “Using slow regular expressions is security-sensitive”, “Allowing requests with excessive content length is security-sensitive”, “Using socket is security-sensitive”, (category: Security hotspot).
+SS (3): “Using slow regular expressions is security-sensitive”, “Allowing requests with excessive content length is security-sensitive”,
+“Using socket is security-sensitive”, (category: Security hotspot).
 
 CWE476 (Null Pointer Dereference)
 PMD (1): “NullAssignment” (category: Error prone);
