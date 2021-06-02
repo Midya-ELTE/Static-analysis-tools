@@ -13,11 +13,15 @@ CWE476 (Null Pointer Dereference)
 PMD (1): “NullAssignment” (category: Error prone);
 SB (13): “NP-NP_ALWAYS_NULL” and other NP-* rules (category: Correctness),
 “NP-NP_LOAD_OF_KNOWN_NULL-VALUE" (category: style);  
-SS (5): “Null pointer should not be dereferenced”, “”@NonNull” values should not be set to null”, “”toString()” and ”clone()” methods should not return null”, “Optional value should only be accessed after calling isPresent()” (category: Bug), “Null should not be returned from a “Boolean” method” (category: Code smell).
+SS (5): “Null pointer should not be dereferenced”, “”@NonNull” values should not be set to null”, 
+“”toString()” and ”clone()” methods should not return null”, 
+“Optional value should only be accessed after calling isPresent()” (category: Bug), 
+“Null should not be returned from a “Boolean” method” (category: Code smell).
 
 CWE772 (Missing Release of Resource after Effective Lifetime)
 PMD (1): “CloseResource” (category: Error prone);
-SB (3): “ODR-ODR_OPEN_DATABASE_RESOURCE” (category: Bad practices), “OBL_OPEN_UNSATISFIED_OBLIGATION”, “ODR_OPEN_DATABASE_RESOURCE_EXCEPTION_PATH”, (category: Experimental);
+SB (3): “ODR-ODR_OPEN_DATABASE_RESOURCE” (category: Bad practices), “OBL_OPEN_UNSATISFIED_OBLIGATION”, “ODR_OPEN_DATABASE_RESOURCE_EXCEPTION_PATH”, 
+(category: Experimental);
 SS (1): “Resource should be closed” (category: Bug).
 
 CWE78 (Improper Neutralization of Special Elements used in an OS Command / OS Command Injection)
