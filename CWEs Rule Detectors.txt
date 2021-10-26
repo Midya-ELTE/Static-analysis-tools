@@ -1,5 +1,5 @@
-Technical report of the six Common Weaknesses Enumeration rules detectors exist in PMD, SpotBugs(SB), Find Security Bug (FSB), and SonarQube Community Edition (SS)
-along with their number and categories.
+Technical report of the six Common Weaknesses Enumeration rules detectors exist in PMD, SpotBugs(SB), Find Security Bug (FSB),
+and SonarQube Community Edition (SS) along with their number and categories.
  
 CWE190 (Integer Overflow)
 SS (1): “Math operand should be cast before assignment” (category: Bug).
